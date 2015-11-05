@@ -1,4 +1,7 @@
 from io import open
+from kivy.app import App
+import config.txt
+
 
 
 def convert(amount, home_currency, target_currency):
@@ -88,3 +91,6 @@ if __name__ == '__main__':
     print_details_test('valid details', 'Australia', get_details("Australia"))
     print_details_test('valid details', 'Japan', get_details("Japan"))
     print_details_test('valid details', 'Hong Kong', get_details("Hong Kong"))
+
+
+def get_all_details():
